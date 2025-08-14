@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family:'Courier New', Courier, monospace;
+    font-style: italic;
+    background-color: lavenderblush;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 10px 0;
+    border-right: 1px solid #ccc;
+}
+.flex-nav {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    background-color: #f1f1f1;
+    padding: 0;
+}
+.flex-nav a {
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #000;
+    border-bottom: 1px solid #ddd;
+}
+.flex-nav a:hover {
+    background-color: #555;
+    color: white;
+}
+.contact-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+.contact-info, .contact-form-container {
+    flex-basis: 48%;
+}
+.contact-info h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+.contact-info p {
+    font-size: 1.1em;
+    color: #555;
+}
+.contact-details {
+    margin-top: 30px;
+}
+.contact-form label {
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+.contact-form textarea {
+    resize: vertical;
+}
+contact-form button {
+    background-color: #007bff; /* A nice blue color */
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+    }
+.contact-info,
+    .contact-form-container {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+}

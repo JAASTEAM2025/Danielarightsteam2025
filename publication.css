@@ -1,0 +1,203 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+}
+h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #343a40;
+}
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e0e0e0;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #343a40;
+}
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.main-nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #6c757d;
+    font-weight: 500;
+}
+.main-nav a:hover, .main-nav a:active {
+    color: #007bff;
+}
+.main-content {
+display: flex;
+gap: 40px;
+max-width: 1200px;
+margin: 20px auto;
+padding: 0 20px;
+}
+.publications-column {
+    flex: 3
+}
+.sidebar {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.featured-publications {
+    padding: 20px 50px;
+}
+.featured-publications h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #343a40;
+}
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+.publication-card {
+    flex-shrink: 0;
+    width: 200px;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+}
+.publication-card:hover {
+    transform: translateY(-5px);
+}
+.publication-card img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+.journal-title {
+    font-weight: bold;
+    margin: 10px 0;
+}
+.publication-card a {
+    color: #007bff;
+    text-decoration: none;
+}
+.publication-card a:hover {
+    text-decoration: underline;
+}
+.recent-publications {
+    padding: 20px  50px;
+}
+.recent-publications h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #343a40;
+}
+.publication-list {
+    display: flex;
+    flex-direction: column;
+}
+.publication-entry {
+    display: grid;
+    grid-template-columns: 80px 1fr 120px;
+    gap: 20px;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+.publication-entry:last-child {
+    border-bottom: none;
+}
+.pub-year {
+    font-weight: bold;
+    color: #495057;
+}
+.pub-authors {
+    font-style: italic;
+    color: #6c757d;
+    margin: 0;
+}
+.pub-title {
+    font-weight: 500;
+    color: #343a40;
+    margin: 0;
+}
+.view-pdf-btn {
+    display: block;
+    padding: 8px 12px;
+    background-color: #28a745;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+}
+.view-pdf-btn:hover {
+    background-color: #218838;
+}
+.sidebar h3 {
+    margin-top: 0;
+}
+.sidebar input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1p solid #ccc;
+    border-radius: 8px;
+}
+.sidebar button {
+    width: 100%;
+    padding: 8px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.sidebar ul li a {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    text-decoration: none;
+    color: #007bff;
+}
+.download-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: #28a745;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.main-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #343a40;
+    color: #f8f9fa;
+    margin-top: 40px;
+}
+.social-links a {
+    margin-left: 15px;
+    color: #f8f9fa;
+    text-decoration: none;
+}
