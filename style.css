@@ -18,7 +18,6 @@ border-radius: 50%;
 /*Navbar*/
 .navbar{
     background: #0d1a2f;
-/*Deep blue, adjust as needed*/
 color: #fff;
 padding: 15px 0;
 position: fixed;
@@ -65,7 +64,7 @@ transition: color 0.3s ease;
     text-align: center;
     margin-top: 70px;
     background: 
-    linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('potato.jpg') no-repeat center center/cover;
+    linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('./images/potato.jpg') no-repeat center center/cover;
     box-shadow: inset 0 -10px 20px rgba(0,0,0,0.3);
 }
 .hero-content h1 {
@@ -222,7 +221,7 @@ background: linear-gradient(135deg,#2e7d32,#4CAF50);
     flex-grow: 0;
     flex-shrink: 0;
 }
-feature-fungi h3 {
+#feature-fungi h3 {
     font-size: 1.4em;
     margin: 0;
     font-weight: 400;
